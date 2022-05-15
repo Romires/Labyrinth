@@ -19,7 +19,15 @@ namespace Player
 
         private void OnTriggerEnter(Collider other)
         {
-            hp++;
+
+            try
+            {
+                PlusHp(hp);
+            }
+            catch
+            {
+                Debug.Log(" Ошибка ");
+            }
             Destroy(c);
         }
     }

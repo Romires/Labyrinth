@@ -20,7 +20,16 @@ namespace Gold
 
         private void OnTriggerEnter(Collider other)
         {
-            Money();
+            try
+            {
+                Money();
+            }
+            catch
+            {
+                Debug.Log(" Ошибка ");
+            }
+
+            
             Destroy (c);
         }
     }

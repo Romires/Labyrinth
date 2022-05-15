@@ -5,7 +5,7 @@ namespace Gold
 {
     public class Gold : MonoBehaviour
     {
-        protected internal int money;
+        protected internal int money = 0;
 
         void Start()
         {
@@ -23,6 +23,7 @@ namespace Gold
             money++;
             Debug.Log("Money = " + money);
             return money;
+            Debug.Log("Для победы вам нужно собрать 10 монет");
         }
     }
 }
